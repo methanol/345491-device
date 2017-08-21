@@ -175,7 +175,7 @@ a {
 }
 
 .user {
-  width:152px;
+  min-width:160px;
 }
 
 .enter {
@@ -633,7 +633,7 @@ margin-bottom:0;
   display:flex;
   margin: 0 auto;
   background-image:linear-gradient(to bottom, rgb(255, 255, 255) 168px, rgb(229, 229, 229) 168px, rgb(229, 229, 229) 456px, rgb(255, 255, 255) 456px );
-  padding: 56px 140px 135px 140px;
+  padding: 56px 140px 135px 180px;
   position: relative;
 }
 
