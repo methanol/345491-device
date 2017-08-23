@@ -104,11 +104,19 @@
         <div class="flex-main-into">
           <div class="flex-form-into">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <div class="price-1">
-                <label for="price"><b>Стоимость</b></label>
-                <input type="range" min="0" max="9000" step="500" name="price-range"
-              id="price">
-                <pre>от 0       до 5000</pre>
+              <div class="price-range">
+                <p>Стоимость</p>
+                <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
               </div>
               <div class="color-type">
                 <b>Цвет</b>
