@@ -1158,29 +1158,31 @@ left:-35px;
 
 .head-background {
   min-height: 70px;
-  background-image: linear-gradient(to right, rgb(220, 220, 220) 33%, rgb(238, 238, 238) 33%);
+  background-image: linear-gradient(to right, rgb(220, 220, 220) 33.5%, rgb(238, 238, 238) 33.5%);
 }
 
 .head-content {
   display:flex;
   justify-content: space-between;
+  min-height: 70px;
 }
 
 .head-word  {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 60px;
-  padding-right: 180px;
-  margin:0;
+  margin: 0;
+  width: 328px;
   position: relative;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 3px;
   background-color: rgb(220, 220, 220);
+  align-self: center;
+}
+
+.head-word b {
+  padding-left: 60px;
 }
 
 .head-word::after {
@@ -1189,33 +1191,34 @@ left:-35px;
   height:2px;
   position:absolute;
   background-color: rgb(0, 0, 0);
-  top: 137px;
+  top: 119px;
   left: 61px;
   z-index: 10;
 }
 
 .head-content .sorting {
   display: flex;
-  height: 44px;
-  padding-top: 16px;
-  padding-right: 250px;
   position: relative;
+  justify-content: space-between;
+  align-self: center;
+  width: 760px;
 }
 
 .sorting b {
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 3.8px;
-  padding-right: 48px;
-  padding-left: 20px;
+  letter-spacing: 3.5px;
+  padding-left: 3px;
 }
 
 .sort-type {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-left: 50px;
 }
 
 .sort-type label {
@@ -1245,6 +1248,7 @@ left:-35px;
 
 .more-less {
   position: relative;
+  width: 60px;
 }
 
 .more-less label:first-of-type:after {
@@ -1255,8 +1259,8 @@ left:-35px;
   border-bottom-color: black;
   border-right-color: transparent;
   border-left-color: transparent;
-  top:14px;
-  left:185px;
+  top: 14px;
+  left: 0px;
 }
 
 .more-less label:last-child:after {
@@ -1267,8 +1271,8 @@ left:-35px;
   border-top-color: black;
   border-right-color: transparent;
   border-left-color: transparent;
-  top:14px;
-  left:230px;
+  top: 14px;
+  right: 0px;
 }
 
 .more-less label {
@@ -1543,7 +1547,6 @@ input[type="checkbox"]:checked + label::before {
   width:200px;
   text-align: center;
   margin-top: 31px;
-  margin-left: -2px;
   z-index: 2;
 }
 
@@ -1557,7 +1560,7 @@ input[type="checkbox"]:checked + label::before {
   text-transform: uppercase;
   letter-spacing: 3.5px;
   vertical-align: middle;
-  padding-top: 5px;
+  padding: 5px 0;
   margin-left: 6px;
   display: block;
 }
