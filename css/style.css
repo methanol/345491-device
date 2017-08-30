@@ -242,7 +242,6 @@ a {
 .nav-menu-header h2 {
 font-family: 'Gilroy', sans-serif;
 font-size: 18px;
-line-height: auto;
 color: black;
 font-weight: 800;
 font-style: normal;
@@ -516,7 +515,7 @@ margin-bottom:0;
   width:220px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top:18px;
+  top:15px;
   left:0;
   z-index: -10;
 }
@@ -527,16 +526,15 @@ margin-bottom:0;
 
 .details a {
   text-decoration: none;
+  width:220px;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   color: black;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   vertical-align: middle;
-  padding-top: 5px;
   display: inline-block;
 }
 
@@ -659,7 +657,6 @@ margin-bottom:0;
   list-style: none;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
-  line-height: auto;
   color: black;
   font-weight: 800;
   font-style: normal;
@@ -679,7 +676,7 @@ margin-bottom:0;
 }
 
 .slider-shifter-2 input[type=radio] {
-display: none;
+  display: none;
 }
 
 .shift-container-2 {
@@ -693,13 +690,13 @@ display: none;
 }
 
 .flex-slider-2 div {
-    display: flex;
-    width:880px;
-    height:320px;
-    padding-left: 120px;
-    padding-top: 40px;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  width:880px;
+  height:320px;
+  padding-left: 120px;
+  padding-top: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
   }
 
 .slider-controls-2 label {
@@ -880,16 +877,16 @@ display: none;
 }
 
 .about-us li::before {
-content: "";
-width: 4px;
-height: 4px;
-border: 3px solid rgb(0, 0, 0);
-border-radius: 50%;
-opacity: 0.3;
-z-index: 11;
-position: absolute;
-top:10px;
-left:-35px;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 11;
+  position: absolute;
+  top:10px;
+  left:-35px;
 }
 
 .contacts p {
@@ -931,7 +928,7 @@ left:-35px;
   width:260px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top:18px;
+  top: 15px;
   left:0;
   z-index: -10;
 }
@@ -940,13 +937,11 @@ left:-35px;
   text-decoration: none;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   vertical-align: middle;
-  padding-top: 5px;
   display: inline-block;
   margin-left: 6px;
 }
@@ -1007,10 +1002,10 @@ left:-35px;
 }
 
 .foot-btn {
-    width: 85px;
-    opacity: 0.6;
-    margin-left: 20px;
-    position: relative;
+  width: 85px;
+  opacity: 0.6;
+  margin-left: 20px;
+  position: relative;
 }
 
 .foot-btn:hover {
@@ -1169,7 +1164,7 @@ left:-35px;
 
 .head-word  {
   margin: 0;
-  width: 328px;
+  width: 329px;
   position: relative;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
@@ -1179,6 +1174,7 @@ left:-35px;
   letter-spacing: 3px;
   background-color: rgb(220, 220, 220);
   align-self: center;
+  padding: 18px 0;
 }
 
 .head-word b {
@@ -1191,7 +1187,7 @@ left:-35px;
   height:2px;
   position:absolute;
   background-color: rgb(0, 0, 0);
-  top: 119px;
+  top: 137px;
   left: 61px;
   z-index: 10;
 }
@@ -1203,6 +1199,8 @@ left:-35px;
   align-self: center;
   width: 760px;
   flex-wrap: wrap;
+  background-color: rgb(238, 238, 238);
+  padding: 18px 0 18px 71px;
 }
 
 .sorting b {
@@ -1325,7 +1323,6 @@ left:-35px;
 .price-range p {
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   color: black;
   font-weight: 800;
   font-style: normal;
@@ -1366,7 +1363,7 @@ left:-35px;
 
 .range-controls .toggle:active {
   border:2px solid white;
-    background: green;
+  background: green;
 }
 
 .range-controls .toggle-max {
@@ -1404,7 +1401,6 @@ left:-35px;
 .color-type b {
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   padding-bottom: 13px;
@@ -1439,7 +1435,7 @@ left:-35px;
 }
 
 .color-type input[type="checkbox"] {
-display: none;
+  display: none;
 }
 
 .color-type label {
@@ -1490,7 +1486,6 @@ input[type="checkbox"]:checked + label::before {
 .blue-type b {
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   padding-bottom: 15px;
@@ -1555,7 +1550,6 @@ input[type="checkbox"]:checked + label::before {
   text-decoration: none;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
@@ -1563,7 +1557,7 @@ input[type="checkbox"]:checked + label::before {
   vertical-align: middle;
   padding: 5px 0;
   margin-left: 6px;
-  display: block;
+  display: inline-block;
 }
 
 .show-it a:active {
@@ -1671,7 +1665,6 @@ article a {
   text-decoration: none;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
@@ -1679,7 +1672,7 @@ article a {
   vertical-align: baseline;
   padding-top: 13px;
   margin-left: 6px;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 
@@ -1736,7 +1729,6 @@ article a {
   margin-left: 22px;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
-  line-height: auto;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
