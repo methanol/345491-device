@@ -631,7 +631,7 @@ margin-bottom:0;
   display: flex;
   margin: 0 auto;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255) 168px, rgb(229, 229, 229) 168px, rgb(229, 229, 229) 456px, rgb(255, 255, 255) 456px );
-  padding: 56px 140px 135px 130px;
+  padding: 56px 0px 135px 0px;
   position: relative;
 }
 
@@ -1058,7 +1058,7 @@ margin-bottom:0;
 
 .friends-home {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 45px;
 }
 
