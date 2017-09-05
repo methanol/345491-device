@@ -2,8 +2,8 @@ var mapOpen = document.querySelector('.js-open-map');
 var mapPopup = document.querySelector('.modal-content-map');
 var mapClose = mapPopup.querySelector('.modal-content-close');
 var formOpen = document.querySelector('.write-now');
-var formUp = document.querySelector('.write-us');
-var mapClose2 = mapPopup.querySelector('.modal-content-close-2');
+var formUp = document.querySelector('.letter-form');
+var formClose2 = document.querySelector('.modal-content-close-2');
 
 var ESC_CODE = 27;
 var ENTER_CODE = 13;
@@ -38,21 +38,28 @@ mapOpen.addEventListener("keydown", function (evt) {
     }
 });
 
-formUp.classList.add("modal-content-show-2");
-
 formOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
+  formUp.classList.remove("modal-content-hide");
   formUp.classList.add("modal-content-show-2");
+  formClose2.classList.remove("modal-content-hide");
+  formClose2.classList.add("modal-content-show-2");
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === ESC_CODE) {
       if (formUp.classList.contains("modal-content-show-2")) {
         formUp.classList.remove("modal-content-show-2");
+        formUp.classList.add("modal-content-hide");
+        formClose2.classList.add("modal-content-hide");
+        formClose2.classList.remove("modal-content-show-2");
         }
       }
   });
 });
 
-mapClose2.addEventListener("click", function (evt) {
+formClose2.addEventListener("click", function (evt) {
   evt.preventDefault();
   formUp.classList.remove("modal-content-show-2");
+  formUp.classList.add("modal-content-hide");
+  formClose2.classList.remove("modal-content-show-2");
+  formClose2.classList.add("modal-content-hide");
 });

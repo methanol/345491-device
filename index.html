@@ -235,8 +235,8 @@
           <div class="js-open-map"  tabindex="0">
             <img src="img/map.jpg" alt="map" width="560" height="222">
           </div>
-          <div class="about-more write-now">
-            <a class="write-now" href="#" >Напишите нам</a>
+          <div class="about-more">
+            <a href="#" class="btn write-now">Напишите нам</a>
           </div>
         </section>
       </div>
@@ -287,23 +287,25 @@
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947343!2d37.527429315713675!3d55.687034004530226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504282171926" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-      <div class="first-field">
-        <label for="log">Ваше имя:</label>
-        <input class="your-user" type="text" name="log" id="log" autofocus required placeholder="Представьтесь, пожалуйста">
-      </div>
-      <div class="second-field">
-        <label for = "mail">Ваш e-mail:</label>
-        <input class="your-mail" id="mail" type="email" name="mail" required placeholder="Для отправки ответа">
-      </div>
-      <div class="third-field">
-        <label for="letter">Текст письма:</label>
-        <textarea class="your-text" rows="10" cols="103" name="letter" id="letter" required placeholder="В свободной форме"></textarea>
-      </div>
-      <button class="send-btn" type="submit">Отправить</button>
-      <button class="modal-content-close-2" type="button" title="Закрыть">Закрыть</button>
-    </form>
-    <script async src="./js/window.js">
+    <div class="letter-form modal-content-hide">
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="first-field">
+          <label for="log">Ваше имя:</label>
+          <input class="your-user" type="text" name="log" id="log" autofocus required placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="second-field">
+          <label for = "mail">Ваш e-mail:</label>
+          <input class="your-mail" id="mail" type="email" name="mail" required placeholder="Для отправки ответа">
+        </div>
+        <div class="third-field">
+          <label for="letter">Текст письма:</label>
+          <textarea class="your-text" rows="10" cols="103" name="letter" id="letter" required placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="send-btn" type="submit"><span>Отправить</span></button>
+        <button class="modal-content-close-2 modal-content-hide" type="button" title="Закрыть">Закрыть</button>
+      </form>
+    </div>
+    <script src="./js/window.js">
     </script>
   </body>
 </html>
