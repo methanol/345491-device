@@ -1,9 +1,15 @@
-var mapOpen = document.querySelector('.js-open-map');
+'use strict';
+(function () {
+var mapOpen = document.querySelector('.open-map');
 var mapPopup = document.querySelector('.modal-content-map');
 var mapClose = mapPopup.querySelector('.modal-content-close');
 var formOpen = document.querySelector('.write-now');
 var formUp = document.querySelector('.letter-form');
 var formClose2 = document.querySelector('.modal-content-close-2');
+var yourUser = document.querySelector('.your-user');
+var yourMail = document.querySelector('.your-mail');
+var yourBtn = document.querySelector('.send-btn');
+var form1 = document.querySelector('.write-us');
 
 var ESC_CODE = 27;
 var ENTER_CODE = 13;
@@ -63,3 +69,5 @@ formClose2.addEventListener("click", function (evt) {
   formClose2.classList.remove("modal-content-show-2");
   formClose2.classList.add("modal-content-hide");
 });
+
+})();
