@@ -549,8 +549,15 @@ a {
   z-index: -10;
 }
 
-.flex-slider-1 .details:hover {
+.flex-slider-1 .details:hover::before {
+  content:"";
+  position: absolute;
+  width: 220px;
+  height: 40px;
   background-color: rgb(240, 197, 46);
+  top: -4px;
+  left: 0;
+  z-index: -10;
 }
 
 .details a {
@@ -971,7 +978,7 @@ a {
   height:40px;
   width:260px;
   text-align: center;
-  position:relative;
+  position: relative;
   margin-top: 60px;
   z-index: 2;
 }
@@ -979,11 +986,11 @@ a {
 .about-and-contacts .about-more::before {
   content:"";
   position: absolute;
-  width:260px;
+  width: 260px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top: 13px;
-  left:0;
+  top: 10px;
+  left: 0;
   z-index: -10;
 }
 
@@ -995,13 +1002,20 @@ a {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: center;
   margin-left: 6px;
 }
 
-.about-and-contacts .about-more:hover {
+.about-and-contacts .about-more:hover::before {
+  content:"";
+  position: absolute;
+  width: 260px;
+  height: 40px;
   background-color: rgb(240, 197, 46);
+  top: -5px;
+  left: 0;
+  z-index: -10;
 }
 
 .about-more a:active {
@@ -1175,9 +1189,10 @@ a {
   display: none;
   width: 960px;
   height: 560px;
+  background: white;
   -webkit-box-shadow: 0 10px 20px rgba(70, 70, 70, 0.5);
           box-shadow: 0 10px 20px rgba(70, 70, 70, 0.5);
-  z-index: 15;
+  z-index: 150;
 }
 
 .open-map {
@@ -1235,6 +1250,8 @@ a {
   height: 554px;
   position: fixed;
   z-index: 20;
+  top: 15%;
+  left: 19%;
 }
 
 .modal-content-hide {
@@ -1242,11 +1259,7 @@ a {
 }
 
 .write-us {
-  position: fixed;
-  top: 15%;
-  left: 19%;
   width: 760px;
-  height: 554px;
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0 10px 20px rgba(70, 70, 70, 0.5);
           box-shadow: 0 10px 20px rgba(70, 70, 70, 0.5);
@@ -1277,11 +1290,13 @@ a {
 .your-mail,
 .your-text {
   background-color: rgb(242, 242, 242);
-  padding-left: 20px;
+  padding: 0 20px;
+  border: 0;
 }
 
 .your-text {
-  padding-top: 20px;
+  padding: 20px;
+  resize: none;
 }
 
 .your-user:hover,
@@ -1294,6 +1309,7 @@ a {
 .your-mail:focus,
 .your-text:focus {
   background-color: rgb(255, 255, 255);
+  border-color: rgb(240, 197, 46);
 }
 
 .send-btn:hover .your-user:invalid,
@@ -1304,7 +1320,7 @@ a {
 
 .your-user,
 .your-mail {
-  width: 340px;
+  width: 320px;
   height: 50px;
 }
 
@@ -1324,7 +1340,8 @@ a {
 }
 
 .third-field {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .send-btn {
@@ -1332,7 +1349,7 @@ a {
   background: none;
   text-decoration: none;
   font-family: 'Gilroy', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
@@ -1342,10 +1359,11 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
   height: 40px;
   text-align: center;
   width:200px;
+  margin-bottom: 90px;
+  cursor: pointer;
 }
 
 .send-btn::before {
@@ -1354,7 +1372,7 @@ a {
   width:200px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top: 15px;
+  top: 16px;
   left: 0px;
   z-index: -10;
 }
