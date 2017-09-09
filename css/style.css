@@ -43,7 +43,7 @@ main {
   padding: 0 20px;
 }
 
-a {
+.container a {
   text-decoration: none;
   color:inherit;
 }
@@ -317,7 +317,7 @@ a {
   background-color: rgb(247, 226, 150);
   z-index: 100;
   display: none;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   padding-top: 13px;
 }
 
@@ -525,7 +525,7 @@ a {
   margin-bottom: 40px;
   margin-top: 19px;
   word-spacing: 1px;
-  width:450px;
+  width: 480px;
   line-height: 30px;
 }
 
@@ -544,7 +544,7 @@ a {
   width:220px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top:13px;
+  top:12px;
   left:0;
   z-index: -10;
 }
@@ -1040,6 +1040,11 @@ a {
   background-color: rgb(70, 70, 70);
 }
 
+.page-footer a {
+text-decoration: none;
+color:inherit;
+}
+
 .flex-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1434,7 +1439,7 @@ a {
 
 .breadcrumbs {
   padding-left: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   padding-top: 11px;
   margin:0;
 }
@@ -1515,7 +1520,7 @@ a {
 .head-word::after {
   content: "";
   width:200px;
-  height:2px;
+  height:3px;
   position:absolute;
   background-color: rgb(0, 0, 0);
   top: 137px;
@@ -1566,6 +1571,7 @@ a {
 .sort-type label {
   padding-right: 29px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .sort-type input[type="radio"]:checked + label {
@@ -1598,6 +1604,7 @@ a {
   content: "";
   position: absolute;
   width: 10px;
+  cursor: pointer;
   height: 10px;
   border:0;
   background-image: url(".././img/icon-down.png");
@@ -1611,6 +1618,7 @@ a {
 .more-less label:last-child:after {
   content: "";
   position: absolute;
+  cursor: pointer;
   width: 10px;
   height: 10px;
   border:0;
@@ -1665,8 +1673,8 @@ a {
 }
 
 .price-range {
-  padding-top: 55px;
-  padding-bottom: 8px;
+  padding-top: 60px;
+  padding-bottom: 18px;
 }
 
 .price-range p {
@@ -1784,7 +1792,7 @@ a {
 .color-type::before {
   content: "";
   width:200px;
-  height:2px;
+  height:3px;
   position:absolute;
   background-color: rgb(0, 0, 0);
   top:13px;
@@ -1794,7 +1802,7 @@ a {
 .color-type::after {
   content: "";
   width:200px;
-  height:2px;
+  height:3px;
   position:absolute;
   background-color: rgb(0, 0, 0);
   top:297px;
@@ -1808,7 +1816,7 @@ a {
 .color-type label {
   padding-left:38px;
   position: relative;
-  margin-bottom: 4px;
+  margin-bottom: 11px;
 }
 
 .color-type label::before {
@@ -1858,7 +1866,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 
 .blue-type input[type=radio] {
@@ -1868,7 +1876,7 @@ input[type="checkbox"]:checked + label::before {
 .blue-type div {
   padding-left: 37px;
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
 }
 
 .blue-type label:hover,
@@ -1914,6 +1922,7 @@ input[type="checkbox"]:checked + label::before {
 
 .show-it a {
   text-decoration: none;
+  color:inherit;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1936,7 +1945,7 @@ input[type="checkbox"]:checked + label::before {
   width:200px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top:19px;
+  top:16px;
   left:0;
   z-index: -1;
 }
@@ -1970,12 +1979,17 @@ input[type="checkbox"]:checked + label::before {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 45px;
+  padding-top: 48px;
 }
 
 .stuff-group article {
   width:360px;
   position:relative;
+}
+
+.stuff-group a {
+  text-decoration: none;
+  color:inherit;
 }
 
 .stuff-group article:hover img {
@@ -2000,7 +2014,7 @@ article .name-price {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .cost {
@@ -2029,7 +2043,7 @@ article .name-price {
   font-size: 14px;
   position: absolute;
   color: rgb(191, 191, 191);
-  top: 63px;
+  top: 66px;
   right: 38px;
   z-index: 100;
 }
@@ -2090,7 +2104,7 @@ article .name-price {
   width:200px;
   height: 8px;
   background-color: rgb(240, 197, 46);
-  top: 18px;
+  top: 15px;
   left: 0px;
   z-index: -1;
 }
@@ -2164,6 +2178,19 @@ article .name-price {
 
 .pages a {
   margin-right: 18px;
+  opacity: 0.3;
+}
+
+.pages a:first-child {
+  opacity: 1;
+}
+
+.pages a:hover {
+  opacity: 0.6;
+}
+
+.pages a:active {
+  opacity:1;
 }
 
 .backward:active,
