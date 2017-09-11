@@ -128,6 +128,7 @@ main {
 
 .searcher input:focus + label {
   display:inline-block;
+  vertical-align: middle;
 }
 
 .searcher input:focus + label::before {
@@ -151,6 +152,7 @@ main {
   background-color: black;
   color:white;
   display:inline-block;
+  vertical-align: middle;
 }
 
 .searcher label:active {
@@ -411,6 +413,7 @@ main {
   z-index: 11;
   position: absolute;
   opacity: 1;
+  vertical-align: middle;
 }
 
 .slider-controls label:first-child{
@@ -658,6 +661,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -920,7 +924,8 @@ main {
   width: 260px;
   height: 100px;
   font-size: 0;
-  background-image:url("./../img/sprites.svg");
+  background-image:url("./../img/sprites.png");
+  vertical-align: middle;
 }
 
 .firms a:hover {
@@ -955,7 +960,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 78px;
+  padding-bottom: 80px;
 }
 
 .about-and-contacts h2 {
@@ -1106,6 +1111,10 @@ main {
 
 .contacts .about-more {
   margin-left: 3px;
+}
+
+.write-now {
+  padding-right: 4px;
 }
 
 .page-footer {
@@ -1259,6 +1268,7 @@ color:inherit;
 .friends a {
   margin-right: 19px;
   opacity: 0.3;
+  font-size: 0;
 }
 
 .friends a:active {
@@ -1367,7 +1377,7 @@ color:inherit;
 .your-text {
   background-color: rgb(242, 242, 242);
   padding: 0 20px;
-  border-color: background-color: rgb(240, 197, 46);
+  border-color: rgb(240, 197, 46);
   border-width: 2px;
 }
 
@@ -1576,7 +1586,7 @@ color:inherit;
   background-color: rgb(220, 220, 220);
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 18px 0;
+  padding: 20px 0;
 }
 
 .head-word b {
@@ -1608,7 +1618,7 @@ color:inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: rgb(238, 238, 238);
-  padding: 18px 0 18px 70px;
+  padding: 20px 0 20px 70px;
 }
 
 .sorting b {
@@ -1739,7 +1749,7 @@ color:inherit;
 
 .price-range {
   padding-top: 61px;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 
 .price-range p {
@@ -1815,6 +1825,7 @@ color:inherit;
   display: inline-block;
   width: 34%;
   opacity: 0.3;
+  vertical-align: middle;
 }
 
 .price-controls input {
