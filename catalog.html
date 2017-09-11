@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Device: Моноподы для селфи</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="container">
@@ -85,17 +85,17 @@
             <b>Сортировка:</b>
             <div class="sort-type">
               <input type="radio" name="sort-me-now" id="prices" checked>
-              <label for="prices">По цене</label>
+              <label for="prices" tabindex="0">По цене</label>
               <input type="radio" name="sort-me-now" id="type">
-              <label for="type">По типу</label>
+              <label for="type" tabindex="0">По типу</label>
               <input type="radio" name="sort-me-now" id="popular">
-              <label for="popular">По популярности</label>
+              <label for="popular" tabindex="0">По популярности</label>
             </div>
             <div class="more-less">
               <input type="radio" name="more" id="more">
-              <label for="more"></label>
+              <label for="more" tabindex="0"></label>
               <input type="radio" name="more" id="less" checked>
-              <label for="less"></label>
+              <label for="less" tabindex="0"></label>
             </div>
           </div>
         </div>
@@ -114,36 +114,36 @@
                     <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                    <label class="min-price" tabindex="0">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price" tabindex="0">до <input name="max-price" type="text" value="5000"></label>
                 </div>
               </div>
               <div class="color-type">
                 <b>Цвет</b>
                 <input type="checkbox" name="black" id="black" checked>
-                <label for="black">Черный</label>
+                <label for="black" tabindex="0">Черный</label>
                 <input type="checkbox" name="white" id="white">
-                <label for="white">Белый</label>
+                <label for="white" tabindex="0">Белый</label>
                 <input type="checkbox" name="blue" id="blue" checked>
-                <label for="blue">Синий</label>
+                <label for="blue" tabindex="0">Синий</label>
                 <input type="checkbox" name="red" id="red" checked>
-                <label for="red">Красный</label>
+                <label for="red" tabindex="0">Красный</label>
                 <input type="checkbox" name="pink" id="pink">
-                <label for="pink">Розовый</label>
+                <label for="pink" tabindex="0">Розовый</label>
               </div>
               <div class="blue-type">
                 <b>Bluetooth</b>
                 <div>
                   <input type="radio" name="yes-no" id="yes" checked>
-                  <label for="yes">Есть</label>
+                  <label for="yes" tabindex="0">Есть</label>
                 </div>
                 <div>
                   <input type="radio" name="yes-no" id="no">
-                  <label for="no">Нет</label>
+                  <label for="no" tabindex="0">Нет</label>
                 </div>
               </div>
             <div class="show-it">
-              <a href="#">Показать</a>
+              <a href="#" tabindex="0">Показать</a>
             </div>
             </form>
           </div>
@@ -167,7 +167,7 @@
                 <img src="img/item-2.jpg" alt="Профессиональная селфи-палка"
                   width="360" height="380">
                 <div class=name-price>
-                  <a href="#">Профессиональная селфи-палка</a>
+                  <a href="#">Профессиональная селфи&nbsp;-&nbsp;палка</a>
                   <div class= "cost">1 500 руб.</div>
                 </div>
                 <div class="in-basket">
@@ -255,12 +255,12 @@
         </nav>
         <div class="friends-home">
           <div class="friends">
-            <a class="social-btn" href="https://facebook.com"><img src="img/facebook.png" alt="facebook" width="38" height="38"></a>
-            <a class="social-btn" href="https://instagram.com"><img src="img/insta.png" alt="instagram" width="38" height="38"></a>
-            <a class="social-btn" href="https://twitter.com"><img src="img/twitter.png" alt="twitter" width="38" height="38"></a>
+            <a class="social-btn" href="https://facebook.com"><img src="img/fb.svg" alt="facebook" width="32" height="32">facebook</a>
+            <a class="social-btn" href="https://instagram.com"><img src="img/instagram.svg" alt="instagram" width="32" height="32">instagram</a>
+            <a class="social-btn" href="https://twitter.com"><img src="img/twitter.svg" alt="twitter" width="32" height="32">twitter</a>
           </div>
           <div class="academy">
-            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" alt="Html academy" width="27" height="34"></a>
+            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Html academy" width="27" height="34"></a>
           </div>
         </div>
         </div>
