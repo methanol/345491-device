@@ -128,16 +128,16 @@ main {
 
 .searcher input:focus + label {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .searcher input:focus + label::before {
     content: "";
-    width: 441px;
+    width: 373px;
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 36px;
+    top: 38px;
     left: 0;
 }
 
@@ -161,11 +161,11 @@ main {
 
 .searcher label:active::after {
     content: "";
-    width: 441px;
+    width: 373px;
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 36px;
+    top: 38px;
     left: 0;
 }
 
@@ -332,7 +332,6 @@ main {
 .hidden-menu {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     position: absolute;
     top: 40px;
     left: -60px;
@@ -342,6 +341,13 @@ main {
     display: none;
     padding-bottom: 12px;
     padding-top: 14px;
+}
+
+.catalog-header a:hover + .hidden-menu,
+.catalog-header a:focus + .hidden-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hidden-menu ul {
@@ -363,12 +369,6 @@ main {
 
 .hidden-menu a:active {
     opacity: 0.3;
-}
-
-.catalog-header:hover .hidden-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .shift-container {
