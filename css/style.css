@@ -343,7 +343,8 @@ main {
     padding-top: 14px;
 }
 
-.catalog-header a:focus + .hidden-menu {
+.catalog-header:hover .hidden-menu,
+.catalog-header:focus .hidden-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
